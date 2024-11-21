@@ -72,7 +72,7 @@ contrasted3 = cv2.convertScaleAbs(gray, alpha=2, beta=0) #Para texto
 
 bar_regions = [
     contrasted[0:40, 175:1200], contrasted[39:58, 175:1200],contrasted[60:80, 175:1200],contrasted[80:105, 175:1200],contrasted[105:125, 175:1200]
-    , contrasted[127:152, 175:1200], contrasted[152:175, 175:1200], contrasted[175:197, 175:300], contrasted[199:220, 175:300], contrasted[222:245, 175:300],
+    , contrasted[135:152, 175:1200], contrasted[152:175, 175:1200], contrasted[175:197, 175:300], contrasted[199:220, 175:300], contrasted[222:245, 175:300],
     contrasted[245:267, 175:300], contrasted[270:295, 175:300], contrasted[295:315, 175:300], contrasted[315:340, 175:250], contrasted[340:362, 175:250],
     contrasted[365:385, 175:250], contrasted[390:410, 175:250], roi_bar_chart[412:435, 191:250], roi_bar_chart[435:455, 191:250]
 ]
@@ -84,7 +84,7 @@ results_numbers = []
 # Iterar sobre cada región de barra
 for i in bar_regions:
     # Recortar la región de cada barra
-    scale_percent = 500  # Aumentar el tamaño al 200%
+    scale_percent = 400  # Aumentar el tamaño al 200%
     height, width = i.shape[:2]
         
     # Calcula el nuevo tamaño
